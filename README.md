@@ -44,11 +44,33 @@ The script uses the Gazelle API's `ajax.php?action=inbox` endpoint to fetch your
 
 ### Running the Script
 
+#### Manually
+
 Run the script using Python:
 
 ```bash
 python gazelle_pm_notifier.py
 ```
+
+#### Automating with `crontab`
+
+To run the script automatically every minute, you can add it to your `crontab`:
+
+1. Open your crontab file for editing:
+
+   ```bash
+   crontab -e
+   ```
+
+2. Add the following line to schedule the script to run every minute:
+
+   ```bash
+   * * * * * /usr/bin/python3 /path/to/your/pmerr.py
+   ```
+
+   Replace `/usr/bin/python3` with the path to your Python 3 executable, and `/path/to/your/pmerr.py` with the full path to your script.
+
+3. Save and exit the editor. The script will now run every minute.
 
 ### Example Notification
 
