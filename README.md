@@ -1,6 +1,6 @@
 # PMerr
 
-This Python script checks for unread Private Messages (PMs) from Gazelle-based trackers and sends notifications to a specified Discord channel via a webhook.
+This Python script checks for unread Private Messages (PMs) from [Gazelle-based trackers](https://github.com/OPSnet/Gazelle) and sends notifications to a specified Discord channel via a webhook.
 
 ## How It Works
 
